@@ -11,7 +11,20 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 30 Jun 2023 21:50:23 +0800</lastBuildDate><atom:link href="https://yuapa.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Jul 2023 22:02:53 +0800</lastBuildDate><atom:link href="https://yuapa.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Elixir Kernel.tap</title>
+      <link>https://yuapa.com/posts/elixir-tap/</link>
+      <pubDate>Fri, 07 Jul 2023 22:02:53 +0800</pubDate>
+      
+      <guid>https://yuapa.com/posts/elixir-tap/</guid>
+      <description>Elixir 從 1.12.0 開始，新增了一個function 叫 Kernel.tap/2，官方的範例是這樣使用
+1 2 iex&amp;gt; tap(1, fn x -&amp;gt; x + 1 end) 1 可以看到 1 pipes 進 tap 這個 function 裡面以後，不管 function 裡面做了什麼事情，他都會回傳 1，也就是當初傳入 tap 時的參數
+這個有什麼好處呢？我們有時候在 pipes 的過程中，會需要做一些像是副作用的效果，但又想要保持傳出去的參數不變，所以有時候會不小心就這樣寫
+1 2 3 4 5 6 7 8 9 10 11 12 def do_something_b(val) do do_other_thing(val) # ... val end def do_thing() do val |&amp;gt; do_something_a() |&amp;gt; do_something_b() |&amp;gt; do_something_c() end 但其實我們可以用 Kernal.tap() 來做到一樣的事情，就如同文章一開始的範例一樣
+1 2 3 4 5 6 7 8 9 10 def do_something_b(val) do do_other_thing(val) end def do_thing() do val |&amp;gt; do_something_a() |&amp;gt; tap(&amp;amp;do_something_b/1) |&amp;gt; do_something_c() end 看一下 Elixir 原始碼是怎麼做到這件事情</description>
+    </item>
+    
     <item>
       <title>參考 Ecto.CheckRepoStatus 實作 check data status</title>
       <link>https://yuapa.com/posts/check-data-migration-status/</link>
