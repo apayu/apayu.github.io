@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://yuapa.com/</loc>
-    <lastmod>2023-07-07T22:02:53+08:00</lastmod>
-  </url><url>
-    <loc>https://yuapa.com/posts/elixir-tap/</loc>
-    <lastmod>2023-07-07T22:02:53+08:00</lastmod>
-  </url><url>
-    <loc>https://yuapa.com/posts/</loc>
-    <lastmod>2023-07-07T22:02:53+08:00</lastmod>
-  </url><url>
-    <loc>https://yuapa.com/posts/check-data-migration-status/</loc>
-    <lastmod>2023-06-30T21:50:23+08:00</lastmod>
-  </url><url>
-    <loc>https://yuapa.com/categories/</loc>
-  </url><url>
-    <loc>https://yuapa.com/tags/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>https://yuapa.com/tw/sitemap.xml</loc>
+    
+      <lastmod>2023-07-07T22:02:53+08:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://yuapa.com/en/sitemap.xml</loc>
+    
+  </sitemap>
+  
+</sitemapindex>
