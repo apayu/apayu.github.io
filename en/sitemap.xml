@@ -3,6 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yuapa.com/en/</loc>
+    <lastmod>2023-06-30T21:50:23+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
@@ -12,6 +13,32 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="https://yuapa.com/en/"
+                />
+  </url><url>
+    <loc>https://yuapa.com/en/posts/check-data-migration-status/</loc>
+    <lastmod>2023-06-30T21:50:23+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-TW"
+                href="https://yuapa.com/posts/check-data-migration-status/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://yuapa.com/en/posts/check-data-migration-status/"
+                />
+  </url><url>
+    <loc>https://yuapa.com/en/posts/</loc>
+    <lastmod>2023-06-30T21:50:23+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-TW"
+                href="https://yuapa.com/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://yuapa.com/en/posts/"
                 />
   </url><url>
     <loc>https://yuapa.com/en/categories/</loc>

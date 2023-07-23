@@ -26,12 +26,12 @@
     </item>
     
     <item>
-      <title>參考 Ecto.CheckRepoStatus 實作 check data status</title>
+      <title>Data migration 如何確認資料狀態?</title>
       <link>https://yuapa.com/posts/check-data-migration-status/</link>
       <pubDate>Fri, 30 Jun 2023 21:50:23 +0800</pubDate>
       
       <guid>https://yuapa.com/posts/check-data-migration-status/</guid>
-      <description>前陣子開發團隊為了要方便做 data migration，參考了這篇文章，主要是講如何實作一個 migration 的機制，最終用起來的手感就跟 db migration 一樣方便，但每次合併 data_migration PR 後，都要在 slack 上提醒其他人本機端(local)要記得執行 data_migration，難免覺得稍嫌麻煩，覺得是不是能像是 db_migration 一樣，在執行的時候，在 server 的 log 裡面顯示訊息。
+      <description>前陣子開發團隊為了要方便做 data migration，參考了Migrating Production Data in Elixir，主要是講如何實作一個 migration 的機制，最終用起來的手感就跟 db migration 一樣方便，但每次合併 data_migration PR 後，都要在 slack 上提醒其他人本機端(local)要記得執行 data_migration，難免覺得稍嫌麻煩，覺得是不是能像是 db_migration 一樣，在執行的時候，在 server 的 log 裡面顯示訊息。
 像是這樣:
 1 2 Phoenix.Ecto.PendingMigrationError at GET / there are pending migrations for repo: Falcon.Repo. Try running `mix ecto.migrate` in the command line to migrate it 後來透過 PendingMigrationError 找到 Phoenix 是如何實作這個過程，原來是透過 phoenix_ecto 來實現確認功能。
 在 Phoenix 專案裡面的 endpoint.ex 會看到這個檔案，裡面有一段 code 是這樣
